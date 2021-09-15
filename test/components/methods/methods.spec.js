@@ -12,7 +12,6 @@ describe('methods test', () => {
     const attachedMethod = comp.instance.attachedMethod = jest.fn()
     const readyMethod = comp.instance.readyMethod = jest.fn()
     // const createdMethod = mockMethod(comp, 'createdMethod')
-
     comp.attach(document.createElement('parent-wrapper'))
 
     comp.triggerLifeTime('created')

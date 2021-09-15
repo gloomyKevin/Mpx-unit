@@ -11,11 +11,21 @@ const simulate = require('miniprogram-simulate')
 describe('store test', () => {
   // 测试内容：mutations
   // 伪造（mock）state 测试mutations下的方法
-  it('mutation test', () => {
+  it('mutations test', () => {
+    console.log('%c [ store ]', 'font-size:13px; background:pink; color:#bf2c9f;', store)
     const state = {
       count: 0
     }
-    // store
-    console.log('%c [ store ]', 'font-size:13px; background:pink; color:#bf2c9f;', store)
+    store.mutations.increment(state)
+    expect(state.count).toBe(1)
+    store.mutations.decrement(state)
+    expect(state.count).toBe(0)
+  })
+
+  it('actions test', () => {
+    const commit = jest.fn()
+    store.actions.increment({ commit })
+    expect(commit).toBeCalled()
+    expect(commit).toBeCalledWith('increment')
   })
 })
