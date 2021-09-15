@@ -17,7 +17,7 @@ createComponent({
   },
   methods: {
     createdMethod () {
-
+      console.log('66666')
     },
     readyMethod () {
 

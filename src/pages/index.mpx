@@ -8,7 +8,8 @@
   {
     "usingComponents": {
       "list-view": "../components/list/list",
-      "props": "../components/props-test/props-test"
+      "props": "../components/props-test/props-test",
+      "methods": "../components/methods/methods"
     }
   }
 </script>
