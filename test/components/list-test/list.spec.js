@@ -2,12 +2,12 @@
  * @file unit test example
  * docs of miniprogram-simulate: https://github.com/wechat-miniprogram/miniprogram-simulate
  */
-const { loadComponent } = require('../util')
+const { loadComponent } = require('../../util')
 const simulate = require('miniprogram-simulate')
 
 describe('test list component', () => {
   it('should render list correct', function () {
-    const id = loadComponent('src/components/list.mpx')
+    const id = loadComponent('src/components/list/list.mpx')
     // const id = simulate.load('src/components/list.mpx')
     const comp = simulate.render(id) // 渲染自定义组件
 

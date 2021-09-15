@@ -29,3 +29,21 @@ exports[`props component test render with props test 1`] = `
   </wx-view>
 </main>
 `;
+
+exports[`props component test render with props test 2`] = `
+<main>
+  <wx-view
+    class="hello Hello"
+    style=""
+  >
+    1
+  </wx-view>
+  <wx-button
+    class="increase-button"
+    style=""
+    bind:tap="handleClick"
+  >
+    increase
+  </wx-button>
+</main>
+`;

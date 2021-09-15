@@ -1,0 +1,30 @@
+<!--test contain: props, data, bindEvent -->
+<template>
+  <view class="hello {{propsContent}}">{{ count }}</view>
+  <button bindtap="handleClick" class="increase-button">increase</button>
+</template>
+
+<script>
+  import { createComponent } from '@mpxjs/core'
+  createComponent({
+    data: {
+      count: 0
+    },
+    properties: {
+      propsContent: String
+    },
+    methods: {
+      handleClick () {
+        this.count++
+      }
+    }
+  })
+</script>
+
+<style lang="stylus"></style>
+
+<script type="application/json">
+  {
+    "usingComponents": {}
+  }
+</script>
