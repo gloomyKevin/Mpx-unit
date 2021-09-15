@@ -1,0 +1,13 @@
+<template>
+  <list-view></list-view>
+</template>
+
+<script lang="ts" src="./index.ts"></script>
+
+<script type="application/json">
+  {
+    "usingComponents": {
+      "list-view": "../components/list"
+    }
+  }
+</script>
