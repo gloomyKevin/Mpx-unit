@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test list component should render list correct 1`] = `
+<main>
+  <wx-view
+    class="list"
+    style=""
+  >
+    <wx-view>
+      手机
+    </wx-view>
+    <wx-view>
+      电视
+    </wx-view>
+    <wx-view>
+      电脑
+    </wx-view>
+  </wx-view>
+</main>
+`;

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<main>
+  <wx-view
+    style=""
+  >
+    Hello
+  </wx-view>
+</main>
+`;
+
+exports[`props component test render props test 1`] = `
+<main>
+  <wx-view
+    style=""
+  >
+    Hello
+  </wx-view>
+</main>
+`;
+
+exports[`props component test render with props test 1`] = `
+<main>
+  <wx-view
+    style=""
+  >
+    Hello
+  </wx-view>
+</main>
+`;

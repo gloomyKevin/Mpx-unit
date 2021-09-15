@@ -7,7 +7,8 @@
 <script type="application/json">
   {
     "usingComponents": {
-      "list-view": "../components/list"
+      "list-view": "../components/list",
+      "props": "../components/props-test"
     }
   }
 </script>

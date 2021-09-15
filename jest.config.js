@@ -4,9 +4,11 @@
  */
 module.exports = {
   // rootDir: path.join(__dirname),
-  moduleFileExtensions: ['js', 'mpx'],
+  moduleFileExtensions: ['js', 'ts', 'mpx'],
   moduleNameMapper: {
     // webpack的alias需要在此处理
+    '^src(.*)': '<rootDir>/src/$1',
+    '@mpxjs/core': '<rootDir>/node_modules/@mpxjs/core/src/index.js'
   },
   testPathIgnorePatterns: ['dist', 'node_modules'],
   testURL: 'http://test.api.com',
@@ -14,5 +16,7 @@ module.exports = {
   transform: {
     '^.+\\.js$': '<rootDir>/node_modules/babel-jest'
   },
-  transformIgnorePatterns: ['node_modules/(?!(@mpxjs))']
+  transformIgnorePatterns: ['node_modules/(?!(@mpxjs))'],
+  // testMatch: ['<rootDir>/src/**/__test__/**/*.test.{js,ts}'],
+  snapshotSerializers: ['miniprogram-simulate/jest-snapshot-plugin']
 }
