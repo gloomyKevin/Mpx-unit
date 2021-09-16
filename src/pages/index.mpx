@@ -1,8 +1,20 @@
 <template>
   <list-view></list-view>
+  <button class="test-btn" bindtap="onTest">自动化测试</button>
 </template>
 
 <script lang="ts" src="./index.ts"></script>
+
+<script>
+  import { createComponent } from '@mpxjs/core'
+  createComponent({
+    methods: {
+      onTest () {
+        console.log('========')
+      }
+    }
+  })
+</script>
 
 <script type="application/json">
   {
